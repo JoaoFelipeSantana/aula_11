@@ -40,6 +40,26 @@ public class Empregado {
         this.salary = newSalary;
     }
 
+
+    public double calcularIrpf() {
+        double rate = 0;
+
+        if (salary >= 2259.21 && salary <= 2825.65){
+            rate = salary * 0.075;
+        }
+        else if(salary > 2825.65 && salary <= 3751.05) {
+            rate = salary * 0.15;
+        }
+        else if (salary > 3751.65 && salary <= 4664.68) {
+            rate = salary * 0.225;
+        }
+        else if (salary > 4664.68){
+            rate = salary * 0.275;
+        }
+
+        return rate;
+    }
+
     
     
 
