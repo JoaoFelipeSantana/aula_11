@@ -21,4 +21,8 @@ public class Horista extends Empregado{
     public void setHour(double newHour) {
         this.hour = newHour;
     }
+
+    public void calcularSalario() {
+        salary = hour * 50;
+    }
 }
