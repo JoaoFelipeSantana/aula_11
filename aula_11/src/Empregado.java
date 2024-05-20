@@ -60,6 +60,29 @@ public class Empregado {
         return rate;
     }
 
+    public double calcularInss() {
+        double discount = 0;
+
+        if (salary <= 1412.00) {
+            discount = salary * 0.075;
+        }
+        else if(salary > 1412.00 && salary <= 2666.68) {
+            discount = salary * 0.09 - 21.18;
+        }
+        else if(salary > 2666.68 && salary <= 4000.03) {
+            discount = salary * 0.12 - 101.18;
+        }
+        else if(salary > 4000.03 && salary <= 7786.02) {
+            discount = salary * 0.14 - 181.18;
+        }
+        else if(salary > 7786.02) {
+            discount = 908.86;
+        }
+
+        return discount;
+    }
+
+
     
     
 
