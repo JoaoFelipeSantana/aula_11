@@ -8,12 +8,8 @@ public class App {
         men1 = new Mensalista("Jose", "Rua abc", "Junior");
         men1.calcularSalario();
         men1.calcularInss();
-
-        System.out.println("==============================");
-        System.out.println("Nome: " + men1.getName());
-        System.out.println("Endereço: " + men1.getAddress());
-        System.out.printf("Salario: %.2f\n", men1.getSalary());
-        System.out.println("==============================");
+        
+        men1.imprimir();
 
 
         // men2
@@ -21,11 +17,7 @@ public class App {
         men2.calcularSalario();
         men2.calcularInss();
 
-        System.out.println("==============================");
-        System.out.println("Nome: " + men2.getName());
-        System.out.println("Endereço: " + men2.getAddress());
-        System.out.printf("Salario: %.2f\n", men2.getSalary());
-        System.out.println("==============================");
+        men2.imprimir();
 
 
         // Empregados Horistas
@@ -33,20 +25,12 @@ public class App {
         hora1 = new Horista("Carlos", "Rua xyz", 20);
         hora1.calcularSalario();
 
-        System.out.println("==============================");
-        System.out.println("Nome: " + hora1.getName());
-        System.out.println("Endereço: " + hora1.getAddress());
-        System.out.printf("Salario: %.2f\n", hora1.getSalary());
-        System.out.println("==============================");
+        hora1.imprimir();
 
         //hora2
         hora2 = new Horista("Cristina", "Rua do centro", 100);
         hora2.calcularSalario();
 
-        System.out.println("==============================");
-        System.out.println("Nome: " + hora2.getName());
-        System.out.println("Endereço: " + hora2.getAddress());
-        System.out.printf("Salario: %.2f\n", hora2.getSalary());
-        System.out.println("==============================");
+        hora2.imprimir();
     }
 }
