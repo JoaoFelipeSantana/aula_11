@@ -1,11 +1,12 @@
 public class Horista extends Empregado{
     
-    private double hour;
+    private double hour, vl_hour;
 
     // Construtores
-    public Horista(String newName, String newAddress, double newHour) {
+    public Horista(String newName, String newAddress, double newHour, double newVl_hour) {
         super(newName, newAddress);
         this.hour = newHour;
+        this.vl_hour = newVl_hour;
     }
 
     public Horista() {
@@ -23,6 +24,6 @@ public class Horista extends Empregado{
     }
 
     public void calcularSalario() {
-        salary = hour * 50;
+        salary = hour * vl_hour;
     }
 }

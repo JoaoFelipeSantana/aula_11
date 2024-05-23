@@ -22,13 +22,13 @@ public class App {
 
         // Empregados Horistas
         //hora1
-        hora1 = new Horista("Carlos", "Rua xyz", 20);
+        hora1 = new Horista("Carlos", "Rua xyz", 20, 50);
         hora1.calcularSalario();
 
         hora1.imprimir();
 
         //hora2
-        hora2 = new Horista("Cristina", "Rua do centro", 100);
+        hora2 = new Horista("Cristina", "Rua do centro", 100, 50);
         hora2.calcularSalario();
 
         hora2.imprimir();
