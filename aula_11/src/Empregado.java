@@ -82,6 +82,14 @@ public class Empregado {
         return discount;
     }
 
+    public void imprimir() {
+        System.out.println("==============================");
+        System.out.println("Nome: " + getName());
+        System.out.println("Endereço: " + getAddress());
+        System.out.printf("Salario: %.2f\n", getSalary());
+        System.out.println("==============================");
+    }
+
 
     
     
